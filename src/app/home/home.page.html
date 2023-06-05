@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tela de testes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label vertical="center" horizontal="center" slot="fixed" class="ion-text-center">{{ valorlabel }}</ion-label>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add" title="mais"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="alerta('Atenção!','Não é nada não!')" title="Alerta">
+        <ion-icon name="alert-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="alteralabel()" title="Não clique aqui, é sério">
+        <ion-icon name="create-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button (click)="presentToast('Favoritado com sucesso!')" title="Favoritar">
+        <ion-icon name="star"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+<ion-footer>
+    <p>© Mareson Libório 2023 - Arquivo de testes</p>
+</ion-footer>
