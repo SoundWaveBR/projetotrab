@@ -22,8 +22,11 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "@ionic/angular": "^7.0.0",
+    "@ionic/cordova-builders": "^9.0.0",
     "@ionic/pro": "2.0.4",
     "cordova-android": "12.0.0",
+    "cordova-plugin-geolocation": "4.1.0",
+    "cordova-sqlite-storage": "github:storesafe/cordova-sqlite-storage",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -76,7 +79,11 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-camera": {
         "ANDROIDX_CORE_VERSION": "1.6.+"
-      }
+      },
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-sqlite-storage": {}
     },
     "platforms": [
       "android"
