@@ -1,15 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tela de testes
-    </ion-title>
+    <ion-title class="ion-text-center">Tela de Testes</ion-title>
     <ion-buttons slot="end">
-      <ion-button>
-        <a href="https://www.youtube.com/watch?v=pm6LW_KlJvY">Meu irmão pediu para eu adicionar isso kk</a>
+      <ion-button (click)="openYouTubeVideo()" color="primary">
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-label>Assistir Vídeo</ion-label>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+
+
 
 <ion-content>
   <div class="ion-text-center">
@@ -20,7 +22,6 @@
   <div class="ion-text-center">
     <ion-button (click)="alerta('Olá!','Bem-vindo(a) >:D')">Chamar saudação :D</ion-button>
     <ion-button (click)="exibirDataHora()">Hora certa!</ion-button>
-
   </div>
 
   <ion-fab vertical="bottom" horizontal="center">

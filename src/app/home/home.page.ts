@@ -26,6 +26,10 @@ export class HomePage {
     });
     await alert.present();
   }
+
+  openYouTubeVideo(){
+    window.open('https://www.youtube.com/watch?v=pm6LW_KlJvY');
+  }
   
 
   exibirDataHora() {
