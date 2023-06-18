@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-tela01',
   templateUrl: './tela01.page.html',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class Tela01Page implements OnInit {
 
   constructor() { }
+
 
   ngOnInit() {
   }

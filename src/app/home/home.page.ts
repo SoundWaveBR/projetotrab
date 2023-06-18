@@ -31,7 +31,6 @@ export class HomePage {
     window.open('https://www.youtube.com/watch?v=pm6LW_KlJvY');
   }
   
-
   exibirDataHora() {
     const dataHoraAtual = new Date();
     const dataFormatada = dataHoraAtual.toLocaleDateString();
@@ -42,6 +41,11 @@ export class HomePage {
   alteralabel() {
     this.valorlabel = "Alterei a label :D";
   }
+
+  goToOtherPage() {
+    this.navCtrl.navigateForward('/tela01');
+  }
+  
 
   async presentToast(mensagem: string) {
     let toast = await this.toastCtrl.create({

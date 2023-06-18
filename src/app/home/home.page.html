@@ -18,7 +18,10 @@
     <h1>Bem-vindo à Tela de Testes</h1>
     <p>{{ valorlabel }}</p>
   </div>
-  
+  <div class="ion-text-center">
+    <ion-button (click)="goToOtherPage()">Ir para outra página</ion-button>
+  </div>
+
   <div class="ion-text-center">
     <ion-button (click)="alerta('Olá!','Bem-vindo(a) >:D')">Chamar saudação :D</ion-button>
     <ion-button (click)="exibirDataHora()">Hora certa!</ion-button>
