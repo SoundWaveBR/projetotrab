@@ -8,7 +8,7 @@ import { AlertController, NavController, ModalController, ToastController } from
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  valorlabel = "Não faço ideia do que seja isso!";
+  valorlabel = "Aqui será alterado para algo em breve >:D";
   labelCentered = true;
 
   constructor(
@@ -28,8 +28,15 @@ export class HomePage {
   }
   
 
+  exibirDataHora() {
+    const dataHoraAtual = new Date();
+    const dataFormatada = dataHoraAtual.toLocaleDateString();
+    const horaFormatada = dataHoraAtual.toLocaleTimeString();
+    this.valorlabel = 'Data:' + dataFormatada + "  -  " + "Hora:" + horaFormatada;
+  }
+
   alteralabel() {
-    this.valorlabel = "O jogo! você perdeu!";
+    this.valorlabel = "Alterei a label :D";
   }
 
   async presentToast(mensagem: string) {
