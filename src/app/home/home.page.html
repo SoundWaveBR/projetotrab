@@ -1,41 +1,54 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       Tela de testes
     </ion-title>
-    <div>
-      <button class="btnyt">
-        <a href="https://www.youtube.com/watch?v=pm6LW_KlJvY" class="button button-primary">Abrir vídeo do YouTube</a>
-      </button>
-    </div>
+    <ion-buttons slot="end">
+      <ion-button>
+        <a href="https://www.youtube.com/watch?v=pm6LW_KlJvY">Meu irmão pediu para eu adicionar isso kk</a>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-label vertical="center" horizontal="center" slot="fixed" class="ion-text-center">{{ valorlabel }}</ion-label>
-  <ion-fab vertical="center" horizontal="center" slot="fixed">
+<ion-content>
+  <div class="ion-text-center">
+    <h1>Bem-vindo à Tela de Testes</h1>
+    <p>{{ valorlabel }}</p>
+  </div>
+  
+  <div class="ion-text-center">
+    <ion-button (click)="alerta('Atenção!','Não é nada não!')">Mostrar Alerta</ion-button>
+    <ion-button (click)="alteralabel()">Alterar Rótulo</ion-button>
+    <ion-button (click)="presentToast('Favoritado com sucesso!')">Favoritar</ion-button>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="center">
     <ion-fab-button>
-      <ion-icon name="add" title="mais"></ion-icon>
+      <ion-icon name="add"></ion-icon>
     </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="alerta('Atenção!','Não é nada não!')" title="Alerta">
-        <ion-icon name="alert-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="bottom">
-      <ion-fab-button (click)="alteralabel()" title="Não clique aqui, é sério">
-        <ion-icon name="create-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="end">
-      <ion-fab-button (click)="presentToast('Favoritado com sucesso!')" title="Favoritar">
-        <ion-icon name="star"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
+    <div class="fab-list-container">
+      <ion-fab-list>
+        <ion-fab-button (click)="alerta('Atenção!','Não é nada não!')">
+          <ion-icon name="alert"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list>
+        <ion-fab-button (click)="alteralabel()">
+          <ion-icon name="create"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list>
+        <ion-fab-button (click)="presentToast('Favoritado com sucesso!')">
+          <ion-icon name="star"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </div>
   </ion-fab>
 </ion-content>
 
-
 <ion-footer>
-    <p>© Mareson Libório 2023 - Arquivo de testes</p>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">© Mareson Libório 2023 - Arquivo de testes</ion-title>
+  </ion-toolbar>
 </ion-footer>

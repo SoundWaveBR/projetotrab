@@ -26,11 +26,11 @@ export class HomePage {
     });
     await alert.present();
   }
+  
 
   alteralabel() {
     this.valorlabel = "O jogo! você perdeu!";
   }
-
 
   async presentToast(mensagem: string) {
     let toast = await this.toastCtrl.create({
@@ -43,18 +43,19 @@ export class HomePage {
           icon: 'star',
           text: 'Favoritado',
           handler: () => {
-            console.log('Favorite clicked');
+            console.log('Favoritado');
           }
         },
         {
           text: 'Feito :D',
-          role: 'cancel',
+          role: 'cancelar',
           handler: () => {
-            console.log('Cancel clicked');
+            console.log('Cancelar');
           }
         }
       ]
     });
+    
 
     toast.present();
   }
