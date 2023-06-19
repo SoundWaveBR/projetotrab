@@ -1,44 +1,44 @@
 <ion-header>
   <ion-toolbar>
     <ion-title class="ion-text-center">Tela de Testes</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="openYouTubeVideo()" color="primary">
-        <ion-icon name="logo-youtube"></ion-icon>
-        <ion-label>Assistir Vídeo</ion-label>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-
-
-
 <ion-content>
-  <div class="ion-text-center">
-    <h1>Bem-vindo à Tela de Testes</h1>
-    <p>{{ valorlabel }}</p>
-  </div>
-  <div class="ion-text-center">
-    <ion-button (click)="goToOtherPage()">Pesquisas</ion-button>
-  </div>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <h1>Bem-vindo à Tela de Testes</h1>
+        <p>{{ valorlabel }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" (click)="goToOtherPage()">Pesquisas</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" (click)="alerta('Olá!', 'Bem-vindo(a) >:D')">Chamar saudação :D</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" (click)="exibirDataHora()">Hora certa!</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div class="ion-text-center">
-    <ion-button (click)="alerta('Olá!','Bem-vindo(a) >:D')">Chamar saudação :D</ion-button>
-    <ion-button (click)="exibirDataHora()">Hora certa!</ion-button>
-  </div>
-
-  <ion-fab vertical="bottom" horizontal="center">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button>
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="alerta('Atenção!','Não é nada não!')">
-        <ion-icon name="alert"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
     <ion-fab-list side="start">
       <ion-fab-button (click)="alteralabel()">
         <ion-icon name="create"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="alerta('Atenção!', 'Não é nada não!')">
+        <ion-icon name="alert"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
     <ion-fab-list side="end">
@@ -51,6 +51,6 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-title class="ion-text-center">© Mareson Libório 2023 - Arquivo de testes</ion-title>
+    <ion-title class="ion-text-start">© Mareson Libório 2023 - Arquivo de testes</ion-title>
   </ion-toolbar>
 </ion-footer>

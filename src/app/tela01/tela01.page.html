@@ -3,16 +3,17 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Tela 01
-    </ion-title>
+    <ion-title>Pesquisas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tela01</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div class="ion-text-center">
+    <h3>Sobre o Observable e Promise, escolha o tópico da pesquisa que deseja visualizar?</h3>
+    <ion-button (click)="irParaPesquisa1()">O que é o Recurso?</ion-button>
+    <ion-button (click)="irParaPesquisa2()">Quais as principais Funcionalidades?</ion-button>
+    <ion-button (click)="irParaPesquisa3()">Quando utilizar esses recursos?</ion-button>
+  </div>
+
 </ion-content>

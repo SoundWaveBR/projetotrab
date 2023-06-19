@@ -27,9 +27,27 @@ export class HomePage {
     await alert.present();
   }
 
-  openYouTubeVideo(){
-    window.open('https://www.youtube.com/watch?v=pm6LW_KlJvY');
-  }
+  
+
+
+
+
+ // adicionar isso no header do html pra adicionar o botão do youtube
+ // <ion-buttons slot="end">
+ // <ion-button (click)="openYouTubeVideo()" color="primary">
+ //   <ion-icon name="logo-youtube"></ion-icon>
+  //  <ion-label>Assistir Vídeo</ion-label>
+  //</ion-button>
+// </ion-buttons>
+
+
+
+
+
+
+ // openYouTubeVideo(){
+//    window.open('https://www.youtube.com/watch?v=pm6LW_KlJvY');
+//  }
   
   exibirDataHora() {
     const dataHoraAtual = new Date();

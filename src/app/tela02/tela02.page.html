@@ -1,13 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>tela02</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tela01"></ion-back-button>
+    </ion-buttons>
+    <ion-title>O que é o Recurso?</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tela02</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <h1>Promise</h1>
+        <p>No caso de uma Promise, o recurso é o valor resultante ou o motivo do seu estado. Quando uma Promise é resolvida com sucesso, o recurso é o valor retornado pela operação assíncrona. Por exemplo, ao fazer uma chamada de API assíncrona usando uma Promise, o recurso pode ser os dados recebidos da resposta da API. Se ocorrer um erro durante a operação assíncrona, o recurso será o motivo pelo qual a Promise foi rejeitada, geralmente uma mensagem de erro.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1>Observable</h1>
+        <p>Já no Observable, o recurso é representado pela sequência de eventos assíncronos que podem ocorrer ao longo do tempo. O Observable emite uma série de valores em uma sequência contínua, e cada valor é considerado um recurso. Por exemplo, ao lidar com eventos do usuário, como cliques de botões, cada clique pode ser considerado um recurso individual dentro do Observable. Em uma chamada de API assíncrona, o recurso seria a sequência de eventos que ocorrem durante a execução da operação, como o envio da solicitação, a recepção de dados parciais e a conclusão da resposta.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -18,7 +18,15 @@ const routes: Routes = [
   {
     path: 'tela02',
     loadChildren: () => import('./tela02/tela02.module').then( m => m.Tela02PageModule)
+  },  {
+    path: 'tela03',
+    loadChildren: () => import('./tela03/tela03.module').then( m => m.Tela03PageModule)
   },
+  {
+    path: 'tela04',
+    loadChildren: () => import('./tela04/tela04.module').then( m => m.Tela04PageModule)
+  },
+
 ];
 
 @NgModule({
