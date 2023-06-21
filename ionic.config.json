@@ -1,7 +1,8 @@
 {
   "name": "projetotrab",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

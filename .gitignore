@@ -20,7 +20,7 @@ log.txt
 # Ionic
 /.ionic
 /www
-/platforms
+/src/app/home/platforms
 /plugins
 
 # Compiled output

@@ -21,10 +21,12 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@capacitor/android": "^5.0.5",
+    "@capacitor/cli": "5.0.5",
+    "@capacitor/core": "5.0.5",
     "@ionic/angular": "^7.0.0",
     "@ionic/cordova-builders": "^9.0.0",
     "@ionic/pro": "2.0.4",
-    "cordova-android": "12.0.0",
     "cordova-plugin-geolocation": "4.1.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
@@ -47,6 +49,7 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-android": "^11.0.0",
     "cordova-plugin-camera": "^6.0.0",
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
@@ -85,8 +88,6 @@
       },
       "cordova-sqlite-storage": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }
